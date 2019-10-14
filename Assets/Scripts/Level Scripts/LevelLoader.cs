@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 //using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour {
@@ -8,6 +9,7 @@ public class LevelLoader : MonoBehaviour {
 
     private bool playerInZone;
     public GameObject NextLevel;
+    public bool levelComplete = false;
     // Use this for initialization
     void Start () {
         //sets the bool to false
@@ -19,7 +21,9 @@ public class LevelLoader : MonoBehaviour {
         //this is applyed to the levelexit object. When the player is colliding with the exit and presses "W" it calles the "PauseC" function 
         if (Input.GetKeyDown(KeyCode.W) && playerInZone)
         {
+            levelComplete = true;
             PauseC();
+            
         }
    	}
     //detects player collision
@@ -51,5 +55,4 @@ public class LevelLoader : MonoBehaviour {
             NextLevel.SetActive(true);//this actiates the nextlevel canvas.
         }
     }
-
 }

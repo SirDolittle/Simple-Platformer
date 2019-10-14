@@ -23,18 +23,12 @@ public class CheckPoint : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {//if the object with name "player" collides with what ever object has this scrpit applyed to it will set the objects position(the checkPoint) as the players spawn point. 
-        if (other.name == "Player")
+        if (other.name == "Player"|| other.tag =="Player")
         {
             levelManager.currentCheckpoint = gameObject;
             Debug.Log("Activated Checkpoint" + transform.position);
             checkPointLocation = transform.position;
         }
-
-        Analytics.CustomEvent("Last hit check Point", new Dictionary<string, object>
-        {
-            {"Last check point =", checkPointLocation}
-        });
-
 
     }
 }

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour {
     //these are setting different variables to be used later in the code. 
-    public int maxHealth = 6;
+    public int maxHealth = 3;
     public int ourHealth;
+    private int damage = 1; 
     public GameObject DeathScreen;
     public float WaitTime = 1.0f;
 
@@ -14,7 +15,7 @@ public class PlayerHealth : MonoBehaviour {
     Animator ani;
     // Use this for initialization
     void Start () {
-        //takes the maxhealth (6) and makes the "ourhealth" veriable equal to that. 
+        //takes the maxhealth (6) and makes the "ourHealth" veriable equal to that. 
         ourHealth = maxHealth;
         ani = GetComponent<Animator>();
         isPlayerDead = false;
@@ -32,10 +33,15 @@ public class PlayerHealth : MonoBehaviour {
             StartCoroutine("Destroyplayer" , WaitTime);//the WaitTime veriable is the timer and allows the "yeild return new waitforseondsrealtime" to work. 
 
         }
-        if (ourHealth >= 6)
+        if (ourHealth >= 3)
         {
             ourHealth = maxHealth; //this if statement stops the player's max health from going over the max. 
         }
+    }
+
+    public void DamagePlayer()
+    {
+        ourHealth = ourHealth - damage;
     }
 
     IEnumerator Destroyplayer(float Count)

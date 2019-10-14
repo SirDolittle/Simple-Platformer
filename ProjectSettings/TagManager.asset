@@ -8,6 +8,8 @@ TagManager:
   - Paused Menu
   - Checkpoint
   - Ground
+  - GroundDetection
+  - Enemy
   layers:
   - Default
   - TransparentFX
