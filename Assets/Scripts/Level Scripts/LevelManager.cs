@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour {
     public bool hasRespawned; 
     private PlayerController player;
     public int totalPlayerDeathCount;
-
+    private float waitTime; 
 
     // Use this for initialization
     void Start ()
@@ -28,8 +28,6 @@ public class LevelManager : MonoBehaviour {
         Debug.Log("player Respawn");
         totalPlayerDeathCount++;
         player.transform.position = currentCheckpoint.transform.position;
-
     }
-
 
 }

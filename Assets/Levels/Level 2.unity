@@ -3635,7 +3635,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 851120140}
-  playerDeathCount: 0
 --- !u!61 &565129334
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4587,7 +4586,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 851120140}
-  playerDeathCount: 0
 --- !u!61 &670584068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6111,7 +6109,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 851120140}
-  playerDeathCount: 0
 --- !u!61 &1009546230
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7366,14 +7363,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 376481900}
     m_Modifications:
-    - target: {fileID: 1068774050548012, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
-      propertyPath: m_Name
-      value: Checkpoint
-      objectReference: {fileID: 0}
-    - target: {fileID: 1068774050548012, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
-      propertyPath: m_TagString
-      value: Checkpoint
-      objectReference: {fileID: 0}
     - target: {fileID: 4502638301055776, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1
@@ -7417,6 +7406,14 @@ PrefabInstance:
     - target: {fileID: 4502638301055776, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
       propertyPath: m_LocalScale.z
       value: 0.60327804
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068774050548012, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
+      propertyPath: m_Name
+      value: Checkpoint
+      objectReference: {fileID: 0}
+    - target: {fileID: 1068774050548012, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
+      propertyPath: m_TagString
+      value: Checkpoint
       objectReference: {fileID: 0}
     - target: {fileID: 114557533785004254, guid: 6580ebc77e12d48428f03af26225b42b,
         type: 3}
@@ -7850,7 +7847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211470681}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 36.414757, y: 8.739903, z: 0.21875}
+  m_LocalPosition: {x: 35.35, y: 8.739903, z: 0.21875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 692879278}
@@ -9903,7 +9900,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 851120140}
-  playerDeathCount: 0
 --- !u!61 &1470099553
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11049,7 +11045,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 851120140}
-  playerDeathCount: 0
 --- !u!61 &1555741172
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12071,7 +12066,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1787571304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 24.394758, y: 8.739903, z: 0.21875}
+  m_LocalPosition: {x: 21.55, y: 8.739903, z: 0.21875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 247709638}
@@ -13554,7 +13549,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 851120140}
-  playerDeathCount: 0
 --- !u!61 &1986117687
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -2134,7 +2134,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &106495499
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3736,7 +3735,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &207265431
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8491,7 +8489,7 @@ PrefabInstance:
     - target: {fileID: 2346066899705115316, guid: 775f060e6f73909498e9d52bcce060c1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 51.543205
+      value: 50.93
       objectReference: {fileID: 0}
     - target: {fileID: 2346066899705115316, guid: 775f060e6f73909498e9d52bcce060c1,
         type: 3}
@@ -15163,7 +15161,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &1038897247
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15591,7 +15588,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4344229661909128, guid: fc45bd36aea8c3841a3819e168344b88, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.73425
+      value: 15.91
       objectReference: {fileID: 0}
     - target: {fileID: 4344229661909128, guid: fc45bd36aea8c3841a3819e168344b88, type: 3}
       propertyPath: m_LocalPosition.z
@@ -17580,7 +17577,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &1186948401
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -20391,7 +20387,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &1446831847
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -24179,7 +24174,7 @@ PrefabInstance:
     - target: {fileID: 2346066899705115316, guid: 775f060e6f73909498e9d52bcce060c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.710525
+      value: 11.63
       objectReference: {fileID: 0}
     - target: {fileID: 2346066899705115316, guid: 775f060e6f73909498e9d52bcce060c1,
         type: 3}
@@ -28059,7 +28054,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!61 &124941697468766875
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -28129,7 +28123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
-  playerDeathCount: 0
 --- !u!4 &1902829669457339081
 Transform:
   m_ObjectHideFlags: 0

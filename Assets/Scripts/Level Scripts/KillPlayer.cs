@@ -6,7 +6,7 @@ public class KillPlayer : MonoBehaviour {
 
     public LevelManager levelManager;
     private GameObject player;
-
+    private float waitTime = 0.5f;
     // Use this for initialization
     bool isColliding;
 
@@ -28,8 +28,7 @@ public class KillPlayer : MonoBehaviour {
         {
             player.GetComponent<PlayerHealth>().ourHealth -= 1;//this finds the gameobject "player" and then calls the playerhealth scrpit 
             levelManager.RespawnPlayer();
-
         }
     }
-
+   
 }
