@@ -8,8 +8,12 @@ public class PlayerController : MonoBehaviour
     //MaxSpeed is the max amount of speed the player can get. 
     public float maxspeed = 10f;
     public float jumpSpeed = 15f;
+    public float wallJumpPush = 10f;
+    private GroundDection groundDection;
+    private WallDetection wallDetection;
     //Grounded bool variable set to false for later dection
     bool grounded = false;
+   public bool isJumping = false;
     Animator anim;
     public Rigidbody2D PlayerRigidBody;
   
@@ -19,6 +23,8 @@ public class PlayerController : MonoBehaviour
         //create a veriable for the Animator component
         anim = GetComponent<Animator>();
         PlayerRigidBody = this.GetComponent<Rigidbody2D>();
+        groundDection = FindObjectOfType<GroundDection>();
+        wallDetection = FindObjectOfType<WallDetection>();
     }
 
     // Update is called once per frame
@@ -50,13 +56,14 @@ public class PlayerController : MonoBehaviour
                 anim.SetInteger("Animation State", 1);
             }
             //jumping
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 //This if statment checks if the player is colliding with another object.
-                if (GameObject.FindWithTag("GroundDetection").GetComponent<GroundDection>().grounded == true)
+                if (groundDection.grounded == true || wallDetection.isOnWall == true)
                 {
+                    isJumping = true; 
                     //if the player isn't colliding with an object it will run this code. It give the player the ability to jump. 
-                    GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed);
+                    PlayerRigidBody.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed);
                     anim.SetInteger("Animation State", 3);
                 }
             }
