@@ -11,6 +11,7 @@ TagManager:
   - GroundDetection
   - Enemy
   - Wall
+  - heatmap
   layers:
   - Default
   - TransparentFX

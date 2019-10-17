@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 29430736}
   m_Layer: 0
   m_Name: tileBlue_03 (5)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9662,7 +9662,7 @@ GameObject:
   - component: {fileID: 1747076073}
   m_Layer: 0
   m_Name: tileBlue_03 (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11904,6 +11904,11 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 212611477557114528, guid: 764551674938cea43a23b05cd00deb9b,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 893430214}
     - target: {fileID: 61837444233940106, guid: 764551674938cea43a23b05cd00deb9b,
         type: 3}
       propertyPath: m_Offset.y
@@ -11929,11 +11934,6 @@ PrefabInstance:
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 851120140}
-    - target: {fileID: 212611477557114528, guid: 764551674938cea43a23b05cd00deb9b,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 893430214}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764551674938cea43a23b05cd00deb9b, type: 3}
 --- !u!4 &2055566026 stripped
