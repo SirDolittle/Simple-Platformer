@@ -4,13 +4,13 @@ using UnityEngine;
 using UnityEngine.Analytics;
 public class PickUpHealth : MonoBehaviour {
 
-    int packNumber;
-
+    public int packNumber;
+    private PlayerStats playerStats;
 
     // Use this for initialization
-    void Start ()
+    void Awake ()
     {
-         
+        playerStats = FindObjectOfType<PlayerStats>();
 
     }
 	
@@ -25,6 +25,7 @@ public class PickUpHealth : MonoBehaviour {
             GameObject.Find("Player").GetComponent<PlayerHealth>().ourHealth += 1;
             packNumber++;//this finds the gameobject "player" and then calls the playerhealth scrpit to add 1 to the ourhealth veriable. 
             DestroyObject(gameObject);//this simply destroyes the health pickup once it has made contact with the player. 
+            playerStats.PlayerHeathPickUP();
         }
     }
 }

@@ -5,7 +5,8 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour {
     //calls objects in the unity and applys variables to them. 
     public GameObject currentCheckpoint;
-    public bool hasRespawned; 
+    public bool hasRespawned;
+    public bool isATester;
     private PlayerController player;
     public int totalPlayerDeathCount;
     private float waitTime; 

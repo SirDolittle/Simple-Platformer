@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour {
     public void Restart()
     {
         Application.LoadLevel(RestartLevel);
+        Time.timeScale = 1;
     }
     public void QuitGame()
     {
