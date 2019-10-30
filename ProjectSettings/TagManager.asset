@@ -12,6 +12,7 @@ TagManager:
   - Enemy
   - Wall
   - heatmap
+  - HealthPickUp
   layers:
   - Default
   - TransparentFX

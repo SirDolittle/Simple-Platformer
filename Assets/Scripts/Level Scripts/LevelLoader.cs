@@ -10,7 +10,14 @@ public class LevelLoader : MonoBehaviour {
     private bool playerInZone;
     public GameObject NextLevel;
     public bool levelComplete = false;
+    PlayerStats playerStats;
     // Use this for initialization
+
+    private void Awake()
+    {
+        playerStats = FindObjectOfType<PlayerStats>();
+    }
+
     void Start () {
         //sets the bool to false
         playerInZone = false; 
@@ -21,7 +28,7 @@ public class LevelLoader : MonoBehaviour {
         //this is applyed to the levelexit object. When the player is colliding with the exit and presses "W" it calles the "PauseC" function 
         if (Input.GetKeyDown(KeyCode.W) && playerInZone)
         {
-            levelComplete = true;
+            playerStats.LevelStats();
             PauseC();
             
         }

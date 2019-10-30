@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     private int packNumber;
     public int deathCount;
     public float timePlayed;
     public bool levelComplete = false;
-    private bool ranOnce = false;
     private LevelManager levelManager;
+    private 
 
     // Start is called before the first frame update
     void Awake()
@@ -24,17 +25,17 @@ public class PlayerStats : MonoBehaviour
         deathCount = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().totalPlayerDeathCount;
         timePlayed = Time.timeSinceLevelLoad;
         levelComplete = GameObject.FindWithTag("Finish").GetComponent<LevelLoader>().levelComplete;
-        packNumber = GameObject.Find("HealthPickUp").GetComponent<PickUpHealth>().packNumber;
-        if (levelComplete == true && ranOnce == false)
+        packNumber = GameObject.FindWithTag("HealthPickUp").GetComponent<PickUpHealth>().packNumber;
+        if (levelComplete == true)
         {
-            EndOfLevelStats();
+            LevelStats();
 
         }
     }
 
     void AppExitStats()
     {
-        AnalyticsEvent.Custom("Level_Exit", new Dictionary<string, object>
+        AnalyticsEvent.Custom("Level_Exit on " + (SceneManager.GetActiveScene().name) , new Dictionary<string, object>
           {
             {"Death_Count", deathCount },
             {"Time_Elasped", timePlayed  },
@@ -42,17 +43,15 @@ public class PlayerStats : MonoBehaviour
             });
     }
 
-    void EndOfLevelStats()
+    public void LevelStats()
     {
-        ranOnce = true;
-        AnalyticsEvent.Custom("Level_Complete", new Dictionary<string, object>
+        AnalyticsEvent.Custom((SceneManager.GetActiveScene().name) + "_Complete", new Dictionary<string, object>
           {
             {"Death_Count", deathCount },
             {"Time_Elasped", timePlayed  },
              {"A Tester?", levelManager.isATester},
 
             });
-        
     }
 
    public void PlayerHeathPickUP()
