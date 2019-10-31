@@ -2981,8 +2981,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d335f10e6fe1a61408f1ef57c2e204a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  packNumber: 0
   deathCount: 0
-  timePlayed: 0
   levelComplete: 0
 --- !u!1 &605193897
 GameObject:
@@ -5294,6 +5294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114668310559782588, guid: b2f6a1a6179203541bd5e0c385dfa3c0,
+        type: 3}
+      propertyPath: NextLevel
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2f6a1a6179203541bd5e0c385dfa3c0, type: 3}
@@ -10964,6 +10969,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114769293657145222, guid: b00a0fa10f46d2c4f984c0570097457f,
+        type: 3}
+      propertyPath: NextLevel
+      value: Level 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8820997531053996981, guid: b00a0fa10f46d2c4f984c0570097457f,
+        type: 3}
+      propertyPath: LoadNextLevel
+      value: Level 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b00a0fa10f46d2c4f984c0570097457f, type: 3}

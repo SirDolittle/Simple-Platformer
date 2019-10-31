@@ -7,6 +7,12 @@ public class PauseMenu : MonoBehaviour {
     public string Main;
     public string RestartLevel;
     public string NextLevel;
+    PlayerStats playerStats;
+
+    private void Awake()
+    {
+        playerStats = FindObjectOfType<PlayerStats>();
+    }
 
     public void Mainm()
     {
@@ -16,7 +22,7 @@ public class PauseMenu : MonoBehaviour {
     public void Restart()
     {
         Application.LoadLevel(RestartLevel);
-
+        playerStats.LevelRestartStats();
         Time.timeScale = 1;
     }
 

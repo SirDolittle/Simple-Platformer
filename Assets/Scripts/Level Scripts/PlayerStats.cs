@@ -7,7 +7,6 @@ public class PlayerStats : MonoBehaviour
 {
     public int packNumber;
     public int deathCount;
-    public float timePlayed;
     public bool levelComplete = false;
     private LevelManager levelManager;
     PickUpHealth pickUpHealth;
@@ -24,7 +23,6 @@ public class PlayerStats : MonoBehaviour
     void Update()
     {
         deathCount = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().totalPlayerDeathCount;
-        timePlayed = Time.timeSinceLevelLoad;
         pickUpHealth = FindObjectOfType<PickUpHealth>();
         levelComplete = GameObject.FindWithTag("Finish").GetComponent<LevelLoader>().levelComplete;
         if (levelComplete == true)
@@ -39,7 +37,7 @@ public class PlayerStats : MonoBehaviour
         AnalyticsEvent.Custom("Level_Exit on " + (SceneManager.GetActiveScene().name) , new Dictionary<string, object>
           {
             {"Death_Count", deathCount },
-            {"Time_Elasped", timePlayed  },
+            {"Time_Elasped", Time.timeSinceLevelLoad  },
             {"Number of health packs picked up", packNumber },
             {"A Tester?", levelManager.isATester},
             });
@@ -49,22 +47,29 @@ public class PlayerStats : MonoBehaviour
     {
         AnalyticsEvent.Custom((SceneManager.GetActiveScene().name) + "_Complete", new Dictionary<string, object>
           {
+            {"Level completed", SceneManager.GetActiveScene().name},
             {"Death_Count", deathCount },
-            {"Time_Elasped", timePlayed  },
-             {"A Tester?", levelManager.isATester},
+            {"Time_Elasped", Time.timeSinceLevelLoad  },
+            {"Number of health packs picked up", packNumber },
+            {"A Tester?", levelManager.isATester},
 
             });
     }
 
-   public void PlayerHeathPickUP()
+    public void LevelRestartStats()
     {
-        packNumber++;
-        AnalyticsEvent.Custom("HealthPack_PickedU", new Dictionary<string, object>
+        AnalyticsEvent.Custom((SceneManager.GetActiveScene().name) + "_Restarted", new Dictionary<string, object>
           {
-            {"Pack Number", packNumber },
+            {"Level Restarted", SceneManager.GetActiveScene().name},
+            {"Death_Count", deathCount },
+            {"Time_Elasped", Time.timeSinceLevelLoad  },
+            {"Number of health packs picked up", packNumber },
+            {"A Tester?", levelManager.isATester},
 
             });
     }
+
+
 
 
     private void OnApplicationQuit()

@@ -119,7 +119,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114769293657145222}
+      - m_Target: {fileID: 8820997531053996981}
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -251,8 +251,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114769293657145222}
-        m_MethodName: Restart
+      - m_Target: {fileID: 8820997531053996981}
+        m_MethodName: GotoNextlevel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114769293657145222}
+      - m_Target: {fileID: 8820997531053996981}
         m_MethodName: Mainm
         m_Mode: 1
         m_Arguments:
@@ -558,7 +558,7 @@ GameObject:
   - component: {fileID: 223892230084261526}
   - component: {fileID: 114818190923308338}
   - component: {fileID: 114462331590430788}
-  - component: {fileID: 114769293657145222}
+  - component: {fileID: 8820997531053996981}
   m_Layer: 5
   m_Name: NextLevelMenu
   m_TagString: Paused Menu
@@ -650,7 +650,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114769293657145222
+--- !u!114 &8820997531053996981
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -659,10 +659,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1896462626853758}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b1c4688ed963f4397c41f4ffd74a4a, type: 3}
+  m_Script: {fileID: 11500000, guid: 873520c1138a8fb4b8ac5c307375e195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Main: Main Menu
-  RestartLevel: Level 2
-  NextLevel: 
-  restartNumber: 0
+  LoadNextLevel: 
