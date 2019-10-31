@@ -4,14 +4,11 @@ using UnityEngine;
 using UnityEngine.Analytics;
 public class PickUpHealth : MonoBehaviour {
 
-    public int packNumber;
-    private PlayerStats playerStats;
-
+    PlayerStats playerStats;
     // Use this for initialization
     void Awake ()
     {
         playerStats = FindObjectOfType<PlayerStats>();
-
     }
 	
 	// Update is called once per frame
@@ -23,9 +20,8 @@ public class PickUpHealth : MonoBehaviour {
         if (other.name == "Player" && GameObject.Find("Player").GetComponent<PlayerHealth>().ourHealth < 3)
         {
             GameObject.Find("Player").GetComponent<PlayerHealth>().ourHealth += 1;
-            packNumber++;//this finds the gameobject "player" and then calls the playerhealth scrpit to add 1 to the ourhealth veriable. 
+            playerStats.packNumber++;//this finds the gameobject "player" and then calls the playerhealth scrpit to add 1 to the ourhealth veriable. 
             DestroyObject(gameObject);//this simply destroyes the health pickup once it has made contact with the player. 
-            playerStats.PlayerHeathPickUP();
         }
     }
 }

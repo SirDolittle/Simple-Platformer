@@ -5,11 +5,12 @@ using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
-    private int packNumber;
+    public int packNumber;
     public int deathCount;
     public float timePlayed;
     public bool levelComplete = false;
     private LevelManager levelManager;
+    PickUpHealth pickUpHealth;
     private 
 
     // Start is called before the first frame update
@@ -24,8 +25,8 @@ public class PlayerStats : MonoBehaviour
     {
         deathCount = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().totalPlayerDeathCount;
         timePlayed = Time.timeSinceLevelLoad;
+        pickUpHealth = FindObjectOfType<PickUpHealth>();
         levelComplete = GameObject.FindWithTag("Finish").GetComponent<LevelLoader>().levelComplete;
-        packNumber = GameObject.FindWithTag("HealthPickUp").GetComponent<PickUpHealth>().packNumber;
         if (levelComplete == true)
         {
             LevelStats();
@@ -39,6 +40,7 @@ public class PlayerStats : MonoBehaviour
           {
             {"Death_Count", deathCount },
             {"Time_Elasped", timePlayed  },
+            {"Number of health packs picked up", packNumber },
             {"A Tester?", levelManager.isATester},
             });
     }
