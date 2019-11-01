@@ -7,6 +7,12 @@ public class NextLevel : MonoBehaviour
     public string Main;
     public string LoadNextLevel;
 
+    PlayerStats playerStats;
+
+    private void Awake()
+    {
+        playerStats = FindObjectOfType<PlayerStats>();
+    }
 
 
     public void Mainm()
@@ -17,7 +23,7 @@ public class NextLevel : MonoBehaviour
     public void GotoNextlevel()
     {
         Application.LoadLevel(LoadNextLevel);
-
+        playerStats.ResetTime();
         Time.timeScale = 1;
     }
 

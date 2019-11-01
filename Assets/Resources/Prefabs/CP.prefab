@@ -29,9 +29,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.4836126}
+  m_Offset: {x: -0.042493418, y: -0.4836126}
   serializedVersion: 2
-  m_Radius: 0.9836126
+  m_Radius: 2.000182
 --- !u!1 &2346066899705115319
 GameObject:
   m_ObjectHideFlags: 0
@@ -120,6 +120,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2346066899705115316}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Offset.x
+      value: -0.261209
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Radius
+      value: 0.23879099
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4502638301055776, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.112
@@ -173,22 +189,6 @@ PrefabInstance:
         type: 3}
       propertyPath: levelManager
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Offset.x
-      value: -0.261209
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_Radius
-      value: 0.23879099
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: m_UsedByEffector
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
