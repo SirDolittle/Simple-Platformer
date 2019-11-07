@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 //using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour {
     //this script is used to allow the player to move onto differnet levels when they get to the end of the level.
 
+    public DataCollection dataCollection;
     private bool playerInZone;
     public GameObject NextLevel;
     public bool levelComplete = false;
@@ -29,6 +30,9 @@ public class LevelLoader : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.W) && playerInZone)
         {
             playerStats.LevelStats();
+            Debug.Log(SceneManager.GetActiveScene().name+ "= " + dataCollection.LevelCompletionTime);
+            Debug.Log(SceneManager.GetActiveScene().name + " deaths = " + dataCollection.LevelDeathCount);
+            Debug.Log(SceneManager.GetActiveScene().name + " HealthPacks = " + dataCollection.HealthPacksPickedUp);
             PauseC();
             
         }

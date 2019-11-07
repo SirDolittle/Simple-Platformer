@@ -6,7 +6,7 @@ public class MovingPlatforms : MonoBehaviour {
     //these public veriables allow me to change these veriables within unity itself. 
     public GameObject platform;
     public float moveSpeed;
-    public Transform currentPoint;
+    private Transform currentPoint;
     public Transform[] points;
     public int pointSelection;
 

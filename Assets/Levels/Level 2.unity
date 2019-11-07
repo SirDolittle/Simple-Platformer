@@ -540,7 +540,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 565129332}
   moveSpeed: 5
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 1672990501}
   - {fileID: 894783307}
@@ -1282,7 +1281,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1530957937}
   moveSpeed: 2
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 1496001734}
   - {fileID: 1632626346}
@@ -1647,7 +1645,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1986117684}
   moveSpeed: 6
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 1010366719}
   - {fileID: 621132523}
@@ -1843,6 +1840,12 @@ PrefabInstance:
       propertyPath: LoadNextLevel
       value: Level 3
       objectReference: {fileID: 0}
+    - target: {fileID: 8820997531053996981, guid: b00a0fa10f46d2c4f984c0570097457f,
+        type: 3}
+      propertyPath: dataCollection
+      value: 
+      objectReference: {fileID: 11400000, guid: ea82587ff7377e94f807653d2488cb4d,
+        type: 2}
     - target: {fileID: 114010466237173036, guid: b00a0fa10f46d2c4f984c0570097457f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2281,7 +2284,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1470099550}
   moveSpeed: 2
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 1433040025}
   - {fileID: 128281623}
@@ -2879,7 +2881,7 @@ GameObject:
   - component: {fileID: 376481900}
   - component: {fileID: 376481899}
   m_Layer: 0
-  m_Name: CP
+  m_Name: Start CP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4372,7 +4374,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 670584065}
   moveSpeed: 2
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 1040240437}
   - {fileID: 272341282}
@@ -4692,7 +4693,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1134680799}
   moveSpeed: 2
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 209350776}
   - {fileID: 582575287}
@@ -7107,6 +7107,7 @@ MonoBehaviour:
   packNumber: 0
   deathCount: 0
   levelComplete: 0
+  dataCollection: {fileID: 11400000, guid: ea82587ff7377e94f807653d2488cb4d, type: 2}
 --- !u!1 &882584769
 GameObject:
   m_ObjectHideFlags: 0
@@ -8744,7 +8745,7 @@ GameObject:
   - component: {fileID: 1061116809}
   - component: {fileID: 1061116808}
   m_Layer: 0
-  m_Name: CP2
+  m_Name: CP1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10090,7 +10091,7 @@ GameObject:
   - component: {fileID: 1211470683}
   - component: {fileID: 1211470682}
   m_Layer: 0
-  m_Name: CP4
+  m_Name: CP3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12847,7 +12848,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1009546227}
   moveSpeed: 2
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 1181066416}
   - {fileID: 2146620307}
@@ -15489,12 +15489,12 @@ PrefabInstance:
     - target: {fileID: 8964431737578578633, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.494
+      value: 71.415
       objectReference: {fileID: 0}
     - target: {fileID: 8964431737578578633, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.747
+      value: 4.001
       objectReference: {fileID: 0}
     - target: {fileID: 8964431737578578633, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
@@ -15951,7 +15951,7 @@ GameObject:
   - component: {fileID: 1787571306}
   - component: {fileID: 1787571305}
   m_Layer: 0
-  m_Name: CP3
+  m_Name: CP2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18802,7 +18802,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platform: {fileID: 1555741169}
   moveSpeed: 8
-  currentPoint: {fileID: 0}
   points:
   - {fileID: 575680864}
   - {fileID: 493826335}
@@ -19093,6 +19092,12 @@ PrefabInstance:
       propertyPath: NextLevel
       value: 
       objectReference: {fileID: 966285763}
+    - target: {fileID: 5117051875925168463, guid: 82bdce946861fc04eabec57f9cac3b23,
+        type: 3}
+      propertyPath: dataCollection
+      value: 
+      objectReference: {fileID: 11400000, guid: ea82587ff7377e94f807653d2488cb4d,
+        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82bdce946861fc04eabec57f9cac3b23, type: 3}
 --- !u!212 &5265362833187529336

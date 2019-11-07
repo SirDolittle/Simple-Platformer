@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour {
     public string RestartLevel;
     public string NextLevel;
     PlayerStats playerStats;
+    public DataCollection dataCollection;
 
     private void Awake()
     {

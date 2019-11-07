@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour {
     //calls objects in the unity and applys variables to them. 
+    public DataCollection dataCollection;
     public GameObject currentCheckpoint;
     public bool hasRespawned;
     public bool isATester;
@@ -14,7 +15,6 @@ public class LevelManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        
         player = FindObjectOfType<PlayerController>();
 	}
 	
@@ -27,6 +27,7 @@ public class LevelManager : MonoBehaviour {
     {
         //when this function is called it will "respawn" the player at the last checkpoint they touched. 
         Debug.Log("player Respawn");
+        dataCollection.LevelDeathCount++;
         totalPlayerDeathCount++;
         player.transform.position = currentCheckpoint.transform.position;
     }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class NextLevel : MonoBehaviour
 {
+    public DataCollection dataCollection;
     public string Main;
     public string LoadNextLevel;
 
@@ -23,8 +24,9 @@ public class NextLevel : MonoBehaviour
     public void GotoNextlevel()
     {
         Application.LoadLevel(LoadNextLevel);
-        playerStats.ResetTime();
         Time.timeScale = 1;
+        
+
     }
 
 
@@ -33,4 +35,10 @@ public class NextLevel : MonoBehaviour
         Application.Quit();
     }
 
+    private void LateUpdate()
+    {
+        dataCollection.LevelCompletionTime = 0;
+        dataCollection.LevelDeathCount = 0;
+        dataCollection.HealthPacksPickedUp = 0;
+    }
 }

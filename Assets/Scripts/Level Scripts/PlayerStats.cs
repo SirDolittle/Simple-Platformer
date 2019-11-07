@@ -7,12 +7,14 @@ public class PlayerStats : MonoBehaviour
 {
     public int packNumber;
     public int deathCount;
+    public int checkPointHits; 
     public static float totalTimeInlevel;
     public static string pastLevel;
     public bool levelComplete = false;
     private string currentLevel;
     private LevelManager levelManager;
     PickUpHealth pickUpHealth;
+    public DataCollection dataCollection; 
     private 
 
     // Start is called before the first frame update
@@ -20,13 +22,24 @@ public class PlayerStats : MonoBehaviour
     {
         currentLevel = SceneManager.GetActiveScene().name;
         levelManager = FindObjectOfType<LevelManager>();
+       
 
+    }
+
+    private void Start()
+    {
+        AnalyticsEvent.Custom("TesterCheck", new Dictionary<string, object>
+          {
+            {"A Tester?", levelManager.isATester},
+
+            });
 
     }
 
     // Update is called once per frame
     void Update()
-    { 
+    {
+        dataCollection.LevelCompletionTime += Time.deltaTime;
         deathCount = GameObject.FindWithTag("GameController").GetComponent<LevelManager>().totalPlayerDeathCount;
         pickUpHealth = FindObjectOfType<PickUpHealth>();
         levelComplete = GameObject.FindWithTag("Finish").GetComponent<LevelLoader>().levelComplete;
@@ -35,23 +48,10 @@ public class PlayerStats : MonoBehaviour
             LevelStats();
 
         }
+
+     
     }
 
-    void AppExitStats()
-    {
-        totalTimeInlevel += Time.timeSinceLevelLoad;
-
-        Debug.Log(pastLevel);
-
-        AnalyticsEvent.Custom("Level_Exit on " + (currentLevel) , new Dictionary<string, object>
-          {
-            {"Death_Count", deathCount },
-            {"Time_Elasped", Time.timeSinceLevelLoad  },
-            {"Total Time In level", totalTimeInlevel },
-            {"Number of health packs picked up", packNumber },
-            {"A Tester?", levelManager.isATester},
-            });
-    }
 
     public void LevelStats()
     {
@@ -60,10 +60,10 @@ public class PlayerStats : MonoBehaviour
         AnalyticsEvent.Custom((currentLevel) + "_Complete", new Dictionary<string, object>
           {
             {"Level completed", SceneManager.GetActiveScene().name},
-            {"Death_Count", deathCount },
+            {"Death_Count", dataCollection.LevelDeathCount },
             {"Time_Elasped", Time.timeSinceLevelLoad  },
-            {"Total Time In level", totalTimeInlevel },
-            {"Number of health packs picked up", packNumber },
+            {"Total Time In level", dataCollection.LevelCompletionTime },
+            {"Number of health packs picked up", dataCollection.HealthPacksPickedUp },
             {"A Tester?", levelManager.isATester},
 
             });
@@ -78,7 +78,6 @@ public class PlayerStats : MonoBehaviour
 
         AnalyticsEvent.Custom((SceneManager.GetActiveScene().name) + "_Restarted", new Dictionary<string, object>
           {
-            {"Level Restarted", SceneManager.GetActiveScene().name},
             {"Time_Elasped", Time.timeSinceLevelLoad },
             {"Number of health packs picked up", packNumber },
             {"A Tester?", levelManager.isATester},
@@ -96,7 +95,9 @@ public class PlayerStats : MonoBehaviour
 
     private void OnApplicationQuit()
     {
-        AppExitStats();
+        dataCollection.LevelCompletionTime = 0;
+        dataCollection.LevelDeathCount = 0;
+        dataCollection.HealthPacksPickedUp = 0; 
     }
 
 }
