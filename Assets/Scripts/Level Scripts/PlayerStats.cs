@@ -79,7 +79,6 @@ public class PlayerStats : MonoBehaviour
         AnalyticsEvent.Custom((SceneManager.GetActiveScene().name) + "_Restarted", new Dictionary<string, object>
           {
             {"Level Restarted", SceneManager.GetActiveScene().name},
-            {"Death_Count", deathCount },
             {"Time_Elasped", Time.timeSinceLevelLoad },
             {"Number of health packs picked up", packNumber },
             {"A Tester?", levelManager.isATester},
