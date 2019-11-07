@@ -7,7 +7,8 @@ public class DataCollection : ScriptableObject
 {
     public float LevelCompletionTime;
     public float LevelDeathCount;
-    public float HealthPacksPickedUp; 
+    public float HealthPacksPickedUp;
+    public int TotalCheckpointsHit; 
 
     // Start is called before the first frame update
     void Start()

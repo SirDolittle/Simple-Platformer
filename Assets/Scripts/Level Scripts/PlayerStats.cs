@@ -57,13 +57,17 @@ public class PlayerStats : MonoBehaviour
     {
         totalTimeInlevel += Time.timeSinceLevelLoad;
 
+        checkPointHits = checkPointHits / 2;
+
+
         AnalyticsEvent.Custom((currentLevel) + "_Complete", new Dictionary<string, object>
           {
             {"Level completed", SceneManager.GetActiveScene().name},
-            {"Death_Count", dataCollection.LevelDeathCount },
+            {"Total Death_Count", dataCollection.LevelDeathCount },
             {"Time_Elasped", Time.timeSinceLevelLoad  },
             {"Total Time In level", dataCollection.LevelCompletionTime },
             {"Number of health packs picked up", dataCollection.HealthPacksPickedUp },
+            {"Number of Checkpoints hit", checkPointHits },
             {"A Tester?", levelManager.isATester},
 
             });
@@ -71,6 +75,7 @@ public class PlayerStats : MonoBehaviour
 
     public void LevelRestartStats()
     {
+        checkPointHits = checkPointHits / 2;
 
         totalTimeInlevel += Time.timeSinceLevelLoad;
 
@@ -79,7 +84,8 @@ public class PlayerStats : MonoBehaviour
         AnalyticsEvent.Custom((SceneManager.GetActiveScene().name) + "_Restarted", new Dictionary<string, object>
           {
             {"Time_Elasped", Time.timeSinceLevelLoad },
-            {"Number of health packs picked up", packNumber },
+            {"health packs picked up", packNumber },
+            {"Checkpoints hit before restart", checkPointHits }, 
             {"A Tester?", levelManager.isATester},
 
             });
