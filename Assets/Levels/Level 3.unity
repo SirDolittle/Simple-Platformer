@@ -19070,7 +19070,7 @@ PrefabInstance:
     - target: {fileID: 427799044267915457, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
         type: 3}
       propertyPath: isATester
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 427799044267915457, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
         type: 3}

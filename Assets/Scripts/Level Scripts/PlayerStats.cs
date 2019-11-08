@@ -57,8 +57,6 @@ public class PlayerStats : MonoBehaviour
     {
         totalTimeInlevel += Time.timeSinceLevelLoad;
 
-        checkPointHits = checkPointHits / 2;
-
 
         AnalyticsEvent.Custom((currentLevel) + "_Complete", new Dictionary<string, object>
           {
@@ -74,7 +72,6 @@ public class PlayerStats : MonoBehaviour
 
     public void LevelRestartStats()
     {
-        checkPointHits = checkPointHits / 2;
 
         totalTimeInlevel += Time.timeSinceLevelLoad;
 
