@@ -13,3 +13,6 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   LevelCompletionTime: 0
+  LevelDeathCount: 0
+  HealthPacksPickedUp: 0
+  TotalCheckpointsHit: 0
