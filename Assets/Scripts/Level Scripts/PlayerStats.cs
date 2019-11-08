@@ -62,7 +62,6 @@ public class PlayerStats : MonoBehaviour
 
         AnalyticsEvent.Custom((currentLevel) + "_Complete", new Dictionary<string, object>
           {
-            {"Level completed", SceneManager.GetActiveScene().name},
             {"Total Death_Count", dataCollection.LevelDeathCount },
             {"Time_Elasped", Time.timeSinceLevelLoad  },
             {"Total Time In level", dataCollection.LevelCompletionTime },
