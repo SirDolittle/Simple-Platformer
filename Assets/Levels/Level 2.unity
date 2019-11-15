@@ -4488,7 +4488,7 @@ GameObject:
   - component: {fileID: 544328850}
   - component: {fileID: 544328852}
   - component: {fileID: 544328851}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5898,7 +5898,7 @@ GameObject:
   - component: {fileID: 670584069}
   - component: {fileID: 670584068}
   - component: {fileID: 670584067}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: enemySpikey_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7104,6 +7104,8 @@ MonoBehaviour:
   hasRespawned: 0
   isATester: 1
   totalPlayerDeathCount: 0
+  waitTime: 0.5
+  playerwaiting: 0
 --- !u!114 &851120141
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8167,7 +8169,7 @@ GameObject:
   - component: {fileID: 1009546231}
   - component: {fileID: 1009546230}
   - component: {fileID: 1009546229}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: enemySpikey_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11538,7 +11540,7 @@ GameObject:
   - component: {fileID: 1339540287}
   - component: {fileID: 1339540289}
   - component: {fileID: 1339540288}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13054,7 +13056,7 @@ GameObject:
   - component: {fileID: 1470099554}
   - component: {fileID: 1470099553}
   - component: {fileID: 1470099552}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: enemySpikey_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16376,7 +16378,7 @@ GameObject:
   - component: {fileID: 1809982402}
   - component: {fileID: 1809982404}
   - component: {fileID: 1809982403}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19126,7 +19128,7 @@ PrefabInstance:
     - target: {fileID: 5117051875925168462, guid: 82bdce946861fc04eabec57f9cac3b23,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 85.599525
+      value: 80.37
       objectReference: {fileID: 0}
     - target: {fileID: 5117051875925168462, guid: 82bdce946861fc04eabec57f9cac3b23,
         type: 3}

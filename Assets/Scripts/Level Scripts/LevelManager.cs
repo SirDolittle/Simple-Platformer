@@ -10,7 +10,8 @@ public class LevelManager : MonoBehaviour {
     public bool isATester;
     private PlayerController player;
     public int totalPlayerDeathCount;
-    private float waitTime; 
+    public float waitTime;
+    public bool playerwaiting = false; 
 
     // Use this for initialization
     void Start ()
@@ -30,6 +31,14 @@ public class LevelManager : MonoBehaviour {
         dataCollection.LevelDeathCount++;
         totalPlayerDeathCount++;
         player.transform.position = currentCheckpoint.transform.position;
+        playerwaiting = true; 
+        StartCoroutine("DelayMovement");
+    }
+
+    IEnumerator DelayMovement()
+    {
+        yield return new WaitForSeconds(waitTime);
+        playerwaiting = false; 
     }
 
 }

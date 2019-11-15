@@ -25,15 +25,7 @@ public class PlayerStats : MonoBehaviour
 
     }
 
-    private void Start()
-    {
-        AnalyticsEvent.Custom("TesterCheck", new Dictionary<string, object>
-          {
-            {"A Tester?", levelManager.isATester},
-
-            });
-
-    }
+  
 
     // Update is called once per frame
     void Update()

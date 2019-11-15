@@ -28,7 +28,7 @@ public class KillPlayer : MonoBehaviour {
         {
             player.GetComponent<PlayerHealth>().ourHealth -= 1;//this finds the gameobject "player" and then calls the playerhealth scrpit 
 
-            DataRecorder.recordDeathPosition3D(player.transform.position);
+            //DataRecorder.recordDeathPosition3D(player.transform.position);
             levelManager.RespawnPlayer();
         }
     }

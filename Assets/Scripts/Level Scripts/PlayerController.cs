@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private WallDetection wallDetection;
     bool isMovingRight = false;
     bool isMovingLeft = false;
-
+    private LevelManager levelManager; 
     Animator anim;
     public Rigidbody2D PlayerRigidBody;
     public LayerMask mylayerMask;
@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerRigidBody = this.GetComponent<Rigidbody2D>();
         wallDetection = FindObjectOfType<WallDetection>();
+        levelManager = FindObjectOfType<LevelManager>(); 
     }
 
     void FixedUpdate()
@@ -32,7 +33,7 @@ public class PlayerController : MonoBehaviour
 
         //Move right 
 
-        if (GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().isPlayerDead == false)
+        if (GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().isPlayerDead == false && levelManager.playerwaiting == false)
         {
             if (Input.GetKey(KeyCode.A))
             {

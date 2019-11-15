@@ -9332,6 +9332,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2057529431}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1385510214 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5864636835225412972, guid: eb1b0f6569716604fb23225ca98ca21e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8964041879162122303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1385510215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385510214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ce30d10317c2a4d8b1257382cf04a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnWall: 0
 --- !u!4 &1391919328 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2346066899705115316, guid: 775f060e6f73909498e9d52bcce060c1,
@@ -15111,7 +15130,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.939523, y: 0}
+  m_Offset: {x: 0.63752776, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -15122,7 +15141,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.5190458, y: 0.64}
+  m_Size: {x: 1.9150554, y: 0.64}
   m_EdgeRadius: 0
 --- !u!212 &2143305707
 SpriteRenderer:
@@ -15216,7 +15235,7 @@ PrefabInstance:
     - target: {fileID: 427799044267915457, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
         type: 3}
       propertyPath: isATester
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 427799044267915457, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
         type: 3}
@@ -15224,6 +15243,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: ea82587ff7377e94f807653d2488cb4d,
         type: 2}
+    - target: {fileID: 427799044267915457, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
+        type: 3}
+      propertyPath: waitTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 427799044267915457, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
+        type: 3}
+      propertyPath: playerwaiting
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 427799044267915462, guid: 8f72db37e0709bb4399e07dfc0ac79d6,
         type: 3}
       propertyPath: m_LocalPosition.x
