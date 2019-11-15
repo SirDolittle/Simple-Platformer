@@ -30,7 +30,6 @@ public class CheckPoint : MonoBehaviour {
             levelManager.currentCheckpoint = gameObject;
             checkPointLocation = transform.position;
             playerStats.checkPointHits++;
-            Debug.Log(playerStats.checkPointHits);
             
 
         }

@@ -15,7 +15,6 @@ public class PlayerStats : MonoBehaviour
     private LevelManager levelManager;
     PickUpHealth pickUpHealth;
     public DataCollection dataCollection; 
-    private 
 
     // Start is called before the first frame update
     void Awake()

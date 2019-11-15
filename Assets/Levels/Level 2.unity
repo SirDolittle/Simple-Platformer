@@ -129,7 +129,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1801241}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,6 +203,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5117051875911398056}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &20335917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5864636835225412972, guid: eb1b0f6569716604fb23225ca98ca21e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708826205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &20335920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20335917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58ce30d10317c2a4d8b1257382cf04a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isOnWall: 0
 --- !u!1 &23285556
 GameObject:
   m_ObjectHideFlags: 0
@@ -213,7 +232,7 @@ GameObject:
   m_Component:
   - component: {fileID: 23285557}
   - component: {fileID: 23285558}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +313,7 @@ GameObject:
   - component: {fileID: 32772389}
   - component: {fileID: 32772391}
   - component: {fileID: 32772390}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -400,7 +419,7 @@ GameObject:
   m_Component:
   - component: {fileID: 51765559}
   - component: {fileID: 51765558}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -479,7 +498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 56110823}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Grounds
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -571,7 +590,7 @@ GameObject:
   m_Component:
   - component: {fileID: 62990634}
   - component: {fileID: 62990633}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -652,7 +671,7 @@ GameObject:
   - component: {fileID: 88019107}
   - component: {fileID: 88019109}
   - component: {fileID: 88019108}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -758,7 +777,7 @@ GameObject:
   m_Component:
   - component: {fileID: 89226419}
   - component: {fileID: 89226418}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +857,7 @@ GameObject:
   m_Component:
   - component: {fileID: 95239238}
   - component: {fileID: 95239239}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -919,7 +938,7 @@ GameObject:
   - component: {fileID: 101893900}
   - component: {fileID: 101893902}
   - component: {fileID: 101893901}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -934,8 +953,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101893899}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.7016294, y: 5.981141, z: 0}
-  m_LocalScale: {x: 1.35, y: 1, z: 1}
+  m_LocalPosition: {x: 3.74, y: 5.981141, z: 0}
+  m_LocalScale: {x: 1.58625, y: 1, z: 1}
   m_Children:
   - {fileID: 88019107}
   m_Father: {fileID: 2114639774}
@@ -1027,7 +1046,7 @@ GameObject:
   - component: {fileID: 116279923}
   - component: {fileID: 116279925}
   - component: {fileID: 116279924}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1133,7 +1152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 127701210}
   - component: {fileID: 127701211}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1243,7 +1262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 161836083}
   - component: {fileID: 161836084}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Moving Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1295,7 +1314,7 @@ GameObject:
   m_Component:
   - component: {fileID: 178378488}
   - component: {fileID: 178378489}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1375,7 +1394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 196038311}
   - component: {fileID: 196038312}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1454,7 +1473,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 201272392}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1497,7 +1516,7 @@ GameObject:
   m_Component:
   - component: {fileID: 208299827}
   - component: {fileID: 208299826}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,7 +1595,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 209350776}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: StartPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1659,7 +1678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 227807543}
   - component: {fileID: 227807544}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1889,7 +1908,7 @@ GameObject:
   m_Component:
   - component: {fileID: 240969126}
   - component: {fileID: 240969128}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2060,7 +2079,7 @@ GameObject:
   - component: {fileID: 275661697}
   - component: {fileID: 275661699}
   - component: {fileID: 275661698}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2166,7 +2185,7 @@ GameObject:
   m_Component:
   - component: {fileID: 285353897}
   - component: {fileID: 285353898}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2297,7 +2316,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 307735024}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Underneath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2329,7 +2348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 315590681}
   - component: {fileID: 315590682}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2409,7 +2428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 317193972}
   - component: {fileID: 317193973}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2489,7 +2508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 319845547}
   - component: {fileID: 319845548}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2570,7 +2589,7 @@ GameObject:
   - component: {fileID: 322130714}
   - component: {fileID: 322130715}
   - component: {fileID: 322130716}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2676,7 +2695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 332754530}
   - component: {fileID: 332754529}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2800,7 +2819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 365606856}
   - component: {fileID: 365606857}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2961,7 +2980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376740322}
   - component: {fileID: 376740324}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3042,7 +3061,7 @@ GameObject:
   - component: {fileID: 381423989}
   - component: {fileID: 381423988}
   - component: {fileID: 381423987}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (4)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3149,7 +3168,7 @@ GameObject:
   - component: {fileID: 384287622}
   - component: {fileID: 384287624}
   - component: {fileID: 384287623}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3256,7 +3275,7 @@ GameObject:
   - component: {fileID: 410935400}
   - component: {fileID: 410935402}
   - component: {fileID: 410935401}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3418,7 +3437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 457225255}
   - component: {fileID: 457225257}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3498,7 +3517,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462561400}
   - component: {fileID: 462561401}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3627,7 +3646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 463779810}
   - component: {fileID: 463779811}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3708,7 +3727,7 @@ GameObject:
   - component: {fileID: 465602760}
   - component: {fileID: 465602762}
   - component: {fileID: 465602761}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3847,7 +3866,7 @@ GameObject:
   - component: {fileID: 475411592}
   - component: {fileID: 475411594}
   - component: {fileID: 475411593}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3952,7 +3971,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 478318681}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4016,7 +4035,7 @@ GameObject:
   - component: {fileID: 498729342}
   - component: {fileID: 498729344}
   - component: {fileID: 498729343}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4123,7 +4142,7 @@ GameObject:
   - component: {fileID: 526427081}
   - component: {fileID: 526427083}
   - component: {fileID: 526427082}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4230,7 +4249,7 @@ GameObject:
   - component: {fileID: 526744989}
   - component: {fileID: 526744991}
   - component: {fileID: 526744990}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4388,7 +4407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 542009110}
   - component: {fileID: 542009109}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4575,7 +4594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 544956780}
   - component: {fileID: 544956781}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4655,7 +4674,7 @@ GameObject:
   m_Component:
   - component: {fileID: 563451023}
   - component: {fileID: 563451024}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Moving Platform 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4829,7 +4848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 567311072}
   - component: {fileID: 567311074}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4938,7 +4957,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 582575287}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EndPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5130,7 +5149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 611316166}
   - component: {fileID: 611316168}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5211,7 +5230,7 @@ GameObject:
   - component: {fileID: 613778977}
   - component: {fileID: 613778979}
   - component: {fileID: 613778978}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5317,7 +5336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 615294061}
   - component: {fileID: 615294062}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5428,7 +5447,7 @@ GameObject:
   - component: {fileID: 644796003}
   - component: {fileID: 644796005}
   - component: {fileID: 644796004}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5503,7 +5522,7 @@ GameObject:
   - component: {fileID: 645764450}
   - component: {fileID: 645764452}
   - component: {fileID: 645764451}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5610,7 +5629,7 @@ GameObject:
   - component: {fileID: 658808314}
   - component: {fileID: 658808316}
   - component: {fileID: 658808315}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5625,8 +5644,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658808313}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.8616295, y: 5.981141, z: 0}
-  m_LocalScale: {x: 1.35, y: 1, z: 1}
+  m_LocalPosition: {x: 3.87, y: 5.981141, z: 0}
+  m_LocalScale: {x: 1.58625, y: 1, z: 1}
   m_Children:
   - {fileID: 1510157340}
   m_Father: {fileID: 931019910}
@@ -5717,7 +5736,7 @@ GameObject:
   m_Component:
   - component: {fileID: 669881091}
   - component: {fileID: 669881092}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5797,7 +5816,7 @@ GameObject:
   m_Component:
   - component: {fileID: 670378970}
   - component: {fileID: 670378971}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5998,7 +6017,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 677106875}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6030,7 +6049,7 @@ GameObject:
   - component: {fileID: 691008185}
   - component: {fileID: 691008187}
   - component: {fileID: 691008186}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6183,7 +6202,7 @@ GameObject:
   m_Component:
   - component: {fileID: 710187000}
   - component: {fileID: 710187002}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat_blue1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6270,9 +6289,9 @@ GameObject:
   - component: {fileID: 731868037}
   - component: {fileID: 731868036}
   - component: {fileID: 731868035}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6376,7 +6395,7 @@ GameObject:
   m_Component:
   - component: {fileID: 736839142}
   - component: {fileID: 736839144}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6456,7 +6475,7 @@ GameObject:
   m_Component:
   - component: {fileID: 742066568}
   - component: {fileID: 742066569}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6536,7 +6555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 759625017}
   - component: {fileID: 759625019}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat_blue4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6782,7 +6801,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 789655971}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6828,7 +6847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827126226}
   - component: {fileID: 827126227}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6965,9 +6984,9 @@ GameObject:
   m_Component:
   - component: {fileID: 850238933}
   - component: {fileID: 850238932}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7125,7 +7144,7 @@ GameObject:
   m_Component:
   - component: {fileID: 882584770}
   - component: {fileID: 882584771}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7235,7 +7254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914099082}
   - component: {fileID: 914099083}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7340,6 +7359,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spike_1
       objectReference: {fileID: 0}
+    - target: {fileID: 1646141974705164, guid: cfb4395088dc091429e1b49856a13604, type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 4955253924668776, guid: cfb4395088dc091429e1b49856a13604, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.09
@@ -7414,7 +7437,7 @@ GameObject:
   - component: {fileID: 930255144}
   - component: {fileID: 930255146}
   - component: {fileID: 930255145}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7520,7 +7543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 930780381}
   - component: {fileID: 930780383}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7599,7 +7622,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 931019910}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7632,7 +7655,7 @@ GameObject:
   - component: {fileID: 943621517}
   - component: {fileID: 943621519}
   - component: {fileID: 943621518}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7851,7 +7874,7 @@ GameObject:
   m_Component:
   - component: {fileID: 983360529}
   - component: {fileID: 983360531}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7955,7 +7978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 990415023}
   - component: {fileID: 990415024}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8036,7 +8059,7 @@ GameObject:
   - component: {fileID: 1002759511}
   - component: {fileID: 1002759513}
   - component: {fileID: 1002759512}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8265,7 +8288,7 @@ GameObject:
   - component: {fileID: 1009761948}
   - component: {fileID: 1009761950}
   - component: {fileID: 1009761949}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8401,7 +8424,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1018632690}
   - component: {fileID: 1018632691}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8481,7 +8504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1028434367}
   - component: {fileID: 1028434369}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8591,7 +8614,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050059821}
   - component: {fileID: 1050059823}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8671,7 +8694,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1051423442}
   - component: {fileID: 1051423443}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8832,7 +8855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062325879}
   - component: {fileID: 1062325878}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8912,7 +8935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1064593072}
   - component: {fileID: 1064593073}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8992,7 +9015,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1071132843}
   - component: {fileID: 1071132845}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9073,7 +9096,7 @@ GameObject:
   - component: {fileID: 1078503551}
   - component: {fileID: 1078503553}
   - component: {fileID: 1078503552}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9182,7 +9205,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1082993741}
   - component: {fileID: 1082993742}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9262,7 +9285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1083705721}
   - component: {fileID: 1083705723}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9341,7 +9364,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1088563949}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9383,7 +9406,7 @@ GameObject:
   - component: {fileID: 1108116693}
   - component: {fileID: 1108116695}
   - component: {fileID: 1108116694}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9556,7 +9579,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1132190924}
   - component: {fileID: 1132190925}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9637,7 +9660,7 @@ GameObject:
   - component: {fileID: 1134680800}
   - component: {fileID: 1134680802}
   - component: {fileID: 1134680801}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9777,7 +9800,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1186812563}
   - component: {fileID: 1186812565}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9857,7 +9880,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1194712697}
   - component: {fileID: 1194712699}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9937,7 +9960,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1200007561}
   - component: {fileID: 1200007563}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10017,7 +10040,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1210508084}
   - component: {fileID: 1210508083}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DES308 wallJump_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10177,7 +10200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1215223237}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10214,9 +10237,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1228050913}
   - component: {fileID: 1228050912}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10431,7 +10454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1235284054}
   - component: {fileID: 1235284055}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10512,7 +10535,7 @@ GameObject:
   - component: {fileID: 1250440188}
   - component: {fileID: 1250440187}
   - component: {fileID: 1250440186}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_11 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10622,7 +10645,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1251035234}
   - component: {fileID: 1251035235}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10701,7 +10724,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1262099881}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Platform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10733,7 +10756,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277533363}
   - component: {fileID: 1277533364}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10814,7 +10837,7 @@ GameObject:
   - component: {fileID: 1284093303}
   - component: {fileID: 1284093305}
   - component: {fileID: 1284093304}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10921,7 +10944,7 @@ GameObject:
   - component: {fileID: 1290366317}
   - component: {fileID: 1290366316}
   - component: {fileID: 1290366315}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_11
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -11031,7 +11054,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1291392928}
   - component: {fileID: 1291392930}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11199,7 +11222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1299667233}
   - component: {fileID: 1299667235}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11279,7 +11302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1301325448}
   - component: {fileID: 1301325449}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11358,7 +11381,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1304355898}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11403,7 +11426,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1335043901}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Underneath
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11434,7 +11457,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1337058110}
   - component: {fileID: 1337058112}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat_blue3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11655,7 +11678,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1368613853}
   - component: {fileID: 1368613854}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11735,7 +11758,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372573085}
   - component: {fileID: 1372573087}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat_blue1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11815,7 +11838,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1372574624}
   - component: {fileID: 1372574625}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11895,7 +11918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1378900737}
   - component: {fileID: 1378900739}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11982,7 +12005,7 @@ GameObject:
   - component: {fileID: 1399619216}
   - component: {fileID: 1399619218}
   - component: {fileID: 1399619217}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12089,7 +12112,7 @@ GameObject:
   - component: {fileID: 1407315458}
   - component: {fileID: 1407315460}
   - component: {fileID: 1407315459}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12261,7 +12284,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1412480668}
   - component: {fileID: 1412480667}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12340,7 +12363,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1413713857}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12404,7 +12427,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1440922201}
   - component: {fileID: 1440922203}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12550,7 +12573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1450704696}
   - component: {fileID: 1450704698}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12631,7 +12654,7 @@ GameObject:
   - component: {fileID: 1451204527}
   - component: {fileID: 1451204529}
   - component: {fileID: 1451204528}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12737,7 +12760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1451540750}
   - component: {fileID: 1451540752}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12869,7 +12892,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1467730212}
   - component: {fileID: 1467730213}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12949,7 +12972,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1468273459}
   - component: {fileID: 1468273461}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13152,7 +13175,7 @@ GameObject:
   - component: {fileID: 1472340444}
   - component: {fileID: 1472340446}
   - component: {fileID: 1472340445}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13259,7 +13282,7 @@ GameObject:
   - component: {fileID: 1473561227}
   - component: {fileID: 1473561229}
   - component: {fileID: 1473561228}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13366,7 +13389,7 @@ GameObject:
   - component: {fileID: 1489121256}
   - component: {fileID: 1489121258}
   - component: {fileID: 1489121257}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13490,7 +13513,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1496001734}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: StartPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13521,7 +13544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1498009123}
   - component: {fileID: 1498009124}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13607,7 +13630,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1502917818}
   - component: {fileID: 1502917820}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13688,7 +13711,7 @@ GameObject:
   - component: {fileID: 1510157340}
   - component: {fileID: 1510157342}
   - component: {fileID: 1510157341}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13794,7 +13817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1513413256}
   - component: {fileID: 1513413258}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13875,7 +13898,7 @@ GameObject:
   - component: {fileID: 1523116110}
   - component: {fileID: 1523116112}
   - component: {fileID: 1523116111}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13981,7 +14004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1524241025}
   - component: {fileID: 1524241027}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14062,7 +14085,7 @@ GameObject:
   - component: {fileID: 1530957938}
   - component: {fileID: 1530957939}
   - component: {fileID: 1530957940}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14170,7 +14193,7 @@ GameObject:
   - component: {fileID: 1536626314}
   - component: {fileID: 1536626316}
   - component: {fileID: 1536626315}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -14277,7 +14300,7 @@ GameObject:
   - component: {fileID: 1547712460}
   - component: {fileID: 1547712462}
   - component: {fileID: 1547712461}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14292,8 +14315,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1547712459}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.4000757, y: 5.981141, z: 0}
-  m_LocalScale: {x: 1.35, y: 1, z: 1}
+  m_LocalPosition: {x: 3.42, y: 5.981141, z: 0}
+  m_LocalScale: {x: 1.58625, y: 1, z: 1}
   m_Children:
   - {fileID: 526427081}
   m_Father: {fileID: 1600701168}
@@ -14383,7 +14406,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1552251814}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14679,7 +14702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1577078339}
   - component: {fileID: 1577078338}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14797,7 +14820,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1585412480}
   - component: {fileID: 1585412479}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_20 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14877,7 +14900,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1594752859}
   - component: {fileID: 1594752858}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: DES308 WellDone_S
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14956,7 +14979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1600701168}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14988,7 +15011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1603778614}
   - component: {fileID: 1603778616}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat_blue3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15069,7 +15092,7 @@ GameObject:
   - component: {fileID: 1606195840}
   - component: {fileID: 1606195839}
   - component: {fileID: 1606195841}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15183,7 +15206,7 @@ GameObject:
   - component: {fileID: 1630633078}
   - component: {fileID: 1630633077}
   - component: {fileID: 1630633076}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Player Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15279,7 +15302,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1632626346}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: EndPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15406,9 +15429,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1686610809}
   - component: {fileID: 1686610808}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (3)
-  m_TagString: Ground
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15488,6 +15511,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8963593539398252301, guid: eb1b0f6569716604fb23225ca98ca21e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9075062555227536319, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
       propertyPath: DeathScreen
@@ -15548,6 +15576,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9075689770550291725, guid: eb1b0f6569716604fb23225ca98ca21e,
+        type: 3}
+      propertyPath: PlayerRigidBody
+      value: 
+      objectReference: {fileID: 1903342391}
+    - target: {fileID: 9075689770550291725, guid: eb1b0f6569716604fb23225ca98ca21e,
+        type: 3}
+      propertyPath: mylayerMask.m_Bits
+      value: 4096
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864636835225412972, guid: eb1b0f6569716604fb23225ca98ca21e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8988845996085692297, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
       propertyPath: m_Enabled
@@ -15566,7 +15609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1713573589}
   - component: {fileID: 1713573591}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15645,7 +15688,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1717665169}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15770,7 +15813,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1781083674}
   - component: {fileID: 1781083673}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15851,7 +15894,7 @@ GameObject:
   - component: {fileID: 1784040118}
   - component: {fileID: 1784040120}
   - component: {fileID: 1784040119}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16145,7 +16188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1792612424}
   - component: {fileID: 1792612425}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16226,7 +16269,7 @@ GameObject:
   - component: {fileID: 1795435291}
   - component: {fileID: 1795435293}
   - component: {fileID: 1795435292}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -16471,7 +16514,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1821090183}
   - component: {fileID: 1821090184}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16552,7 +16595,7 @@ GameObject:
   - component: {fileID: 1821599539}
   - component: {fileID: 1821599541}
   - component: {fileID: 1821599540}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16732,7 +16775,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1847567632}
   - component: {fileID: 1847567631}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16812,7 +16855,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1858825606}
   - component: {fileID: 1858825607}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16893,7 +16936,7 @@ GameObject:
   - component: {fileID: 1862519291}
   - component: {fileID: 1862519293}
   - component: {fileID: 1862519292}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17000,7 +17043,7 @@ GameObject:
   - component: {fileID: 1864411623}
   - component: {fileID: 1864411625}
   - component: {fileID: 1864411624}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17106,7 +17149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1867760852}
   - component: {fileID: 1867760854}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17186,7 +17229,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1876987406}
   - component: {fileID: 1876987408}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17256,6 +17299,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1903342391 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8995042289196001845, guid: eb1b0f6569716604fb23225ca98ca21e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1708826205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1936488959
 GameObject:
   m_ObjectHideFlags: 0
@@ -17266,7 +17315,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1936488960}
   - component: {fileID: 1936488961}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17347,7 +17396,7 @@ GameObject:
   - component: {fileID: 1946875907}
   - component: {fileID: 1946875909}
   - component: {fileID: 1946875908}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17459,7 +17508,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1963957594}
   - component: {fileID: 1963957596}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17539,7 +17588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1970452711}
   - component: {fileID: 1970452713}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Plat_blue2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17619,7 +17668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1977391444}
   - component: {fileID: 1977391446}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -17963,7 +18012,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1988108664}
   - component: {fileID: 1988108665}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18048,7 +18097,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1995593033}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18091,7 +18140,7 @@ GameObject:
   - component: {fileID: 2017190382}
   - component: {fileID: 2017190384}
   - component: {fileID: 2017190383}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_03 (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18197,7 +18246,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2021902333}
   - component: {fileID: 2021902332}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18277,7 +18326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2037582210}
   - component: {fileID: 2037582209}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: set2_tiles (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18357,7 +18406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2050879815}
   - component: {fileID: 2050879816}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18443,7 +18492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2093363730}
   - component: {fileID: 2093363729}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18523,7 +18572,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2112459487}
   - component: {fileID: 2112459488}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18653,7 +18702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2114639774}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Ground7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18685,7 +18734,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2121124742}
   - component: {fileID: 2121124743}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_05 (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18855,6 +18904,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Moving Platform 2
       objectReference: {fileID: 0}
+    - target: {fileID: 296793077245552243, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 296793077245552242, guid: 2a452296be5b11246b2ac4ce92a73537,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18909,6 +18963,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 296793077357222336, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 296793078020858891, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 296793078237410586, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 296793076568502232, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 296793077746457954, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 296793078462067943, guid: 2a452296be5b11246b2ac4ce92a73537,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a452296be5b11246b2ac4ce92a73537, type: 3}
@@ -19015,7 +19099,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2974026034852236702}
   - component: {fileID: 5265362833187529336}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: tileBlue_26
   m_TagString: Ground
   m_Icon: {fileID: 0}

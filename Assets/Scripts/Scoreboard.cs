@@ -2,8 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Scoreboard : MonoBehaviour
+[CreateAssetMenu]
+public class Scoreboard : ScriptableObject
 {
+
+    public float[] TimeScores;
+    public string[] Names; 
+
+
     // Start is called before the first frame update
     void Start()
     {

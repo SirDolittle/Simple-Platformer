@@ -9,30 +9,27 @@ public class PlayerController : MonoBehaviour
     public float maxspeed = 10f;
     public float jumpSpeed = 15f;
     public float wallJumpPush = 10f;
-    private GroundDection groundDection;
     private WallDetection wallDetection;
-    //Grounded bool variable set to false for later dection
-    bool grounded = false;
-   public bool isJumping = false;
+    bool isMovingRight = false;
+    bool isMovingLeft = false;
+
     Animator anim;
     public Rigidbody2D PlayerRigidBody;
-  
+    public LayerMask mylayerMask;
+    float movement = 0f;
+
     // Use this for initialization
     void Start()
     {
         //create a veriable for the Animator component
         anim = GetComponent<Animator>();
         PlayerRigidBody = this.GetComponent<Rigidbody2D>();
-        groundDection = FindObjectOfType<GroundDection>();
         wallDetection = FindObjectOfType<WallDetection>();
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        float movement = 0f;
-        
-       
+
         //Move right 
 
         if (GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().isPlayerDead == false)
@@ -46,33 +43,45 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(-1.0f, transform.localScale.y, transform.localScale.z);
                 //code which starts an animation when the "a" key is pressed.
                 anim.SetInteger("Animation State", 1);
+                isMovingLeft = true;
             }
             //Move left
             else if (Input.GetKey(KeyCode.D))
             {
                 movement = maxspeed;
-               PlayerRigidBody.velocity = new Vector2(movement,PlayerRigidBody.velocity.y);
+                PlayerRigidBody.velocity = new Vector2(movement, PlayerRigidBody.velocity.y);
                 transform.localScale = new Vector3(1.0f, transform.localScale.y, transform.localScale.z);
                 anim.SetInteger("Animation State", 1);
+                isMovingRight = true;
             }
-            //jumping
-            if (Input.GetKeyDown(KeyCode.Space))
+            else
             {
-                //This if statment checks if the player is colliding with another object.
-                if (groundDection.grounded == true || wallDetection.isOnWall == true)
+
+                PlayerRigidBody.velocity = new Vector2(Mathf.Lerp(PlayerRigidBody.velocity.x, 0, 0.8F), PlayerRigidBody.velocity.y);
+            }
+
+
+            //jumping
+            if (Input.GetKey(KeyCode.Space))
+            {
+                // RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, mylayerMask);
+                // If it hits something...
+                if (Physics2D.Raycast(transform.position, -Vector2.up, 0.5f, mylayerMask) || wallDetection.isOnWall == true)
                 {
-                    isJumping = true; 
-                    //if the player isn't colliding with an object it will run this code. It give the player the ability to jump. 
+
                     PlayerRigidBody.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed);
                     anim.SetInteger("Animation State", 3);
+
                 }
+
             }
         }
+
         //resting animation if no keys are pressed.
         if (Input.anyKey == false)
         {
             anim.SetInteger("Animation State", 2);
         }
-
     }
+
 }
