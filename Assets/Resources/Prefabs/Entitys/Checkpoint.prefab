@@ -44,3 +44,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 0}
+  Checked: {fileID: 21300000, guid: e6c978bc6d1395b42ba644112470f3c9, type: 3}
