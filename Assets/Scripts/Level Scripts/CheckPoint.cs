@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
+
 public class CheckPoint : MonoBehaviour {
     //calls the levelmanager object in the engine and gives it a veriable.
     PlayerStats playerStats;
     public LevelManager levelManager;
     private bool checkPointAcitvated = false; 
     Vector3 checkPointLocation;
+    public Sprite Checked; 
     // Use this for initialization
     void Start()
     {
@@ -30,7 +32,7 @@ public class CheckPoint : MonoBehaviour {
             levelManager.currentCheckpoint = gameObject;
             checkPointLocation = transform.position;
             playerStats.checkPointHits++;
-            
+            gameObject.GetComponentInParent<SpriteRenderer>().sprite = Checked;
 
         }
 

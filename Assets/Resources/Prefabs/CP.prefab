@@ -41,7 +41,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2346066899705115319}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0139937, y: -0.4985199, z: 0.044921875}
+  m_LocalPosition: {x: 0.025, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2342179988008382501}
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ed7d59d7f82ac546aceeab1e9f60c55, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ecf96eb6b5ea3aa488b1d84c097f889a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -174,6 +174,12 @@ PrefabInstance:
       propertyPath: levelManager
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 114557533785004254, guid: 6580ebc77e12d48428f03af26225b42b,
+        type: 3}
+      propertyPath: Checked
+      value: 
+      objectReference: {fileID: 21300000, guid: e6c978bc6d1395b42ba644112470f3c9,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6580ebc77e12d48428f03af26225b42b, type: 3}
 --- !u!1 &2345578678095245865 stripped
