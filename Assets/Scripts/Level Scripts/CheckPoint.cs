@@ -29,16 +29,14 @@ public class CheckPoint : MonoBehaviour {
     {//if the object with name "player" collides with what ever object has this scrpit applyed to it will set the objects position(the checkPoint) as the players spawn point. 
         if (other.tag == "Player" && checkPointAcitvated == false)
         {
+            Debug.Log("Checkpoint Activated"); 
             levelManager.currentCheckpoint = gameObject;
             checkPointLocation = transform.position;
             playerStats.checkPointHits++;
             gameObject.GetComponentInParent<SpriteRenderer>().sprite = Checked;
-
+            checkPointAcitvated = true;
         }
 
     }
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        checkPointAcitvated = true;
-    }
+
 }

@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D PlayerRigidBody;
     public LayerMask mylayerMask;
     float movement = 0f;
+    private GroundDetection groundDetection; 
 
     // Use this for initialization
     void Start()
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         PlayerRigidBody = this.GetComponent<Rigidbody2D>();
         wallDetection = FindObjectOfType<WallDetection>();
+        groundDetection = FindObjectOfType<GroundDetection>(); 
         levelManager = FindObjectOfType<LevelManager>(); 
     }
 
@@ -65,9 +67,7 @@ public class PlayerController : MonoBehaviour
             //jumping
             if (Input.GetKey(KeyCode.Space))
             {
-                // RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, mylayerMask);
-                // If it hits something...
-                if (Physics2D.Raycast(transform.position, -Vector2.up, 0.5f, mylayerMask) || wallDetection.isOnWall == true)
+                if (Physics2D.Raycast(transform.position, -Vector2.up, 0.5f, mylayerMask) || wallDetection.isOnWall == true || groundDetection.isGrounded) 
                 {
 
                     PlayerRigidBody.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed);
