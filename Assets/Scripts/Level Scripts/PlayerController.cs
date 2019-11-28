@@ -34,7 +34,6 @@ public class PlayerController : MonoBehaviour
     {
 
         //Move right 
-
         if (GameObject.FindWithTag("Player").GetComponent<PlayerHealth>().isPlayerDead == false && levelManager.playerwaiting == false)
         {
             if (Input.GetKey(KeyCode.A))
@@ -60,26 +59,35 @@ public class PlayerController : MonoBehaviour
             else
             {
 
-                PlayerRigidBody.velocity = new Vector2(Mathf.Lerp(PlayerRigidBody.velocity.x, 0, 0.8F), PlayerRigidBody.velocity.y);
+                PlayerRigidBody.velocity = new Vector2(Mathf.Lerp(PlayerRigidBody.velocity.x, 0, 0.8F), PlayerRigidBody.velocity.y);//Apply deceleration force when not moveing
             }
 
 
             //jumping
             if (Input.GetKey(KeyCode.Space))
             {
-                if (Physics2D.Raycast(transform.position, -Vector2.up, 0.5f, mylayerMask) || wallDetection.isOnWall == true || groundDetection.isGrounded) 
+                if (Physics2D.Raycast(transform.position, -Vector2.up, 0.5f, mylayerMask) || groundDetection.isGrounded == true) // if a raycast down hits or if the ground detection bool equals true
                 {
 
-                    PlayerRigidBody.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed);
-                    anim.SetInteger("Animation State", 3);
+                    PlayerRigidBody.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed); // apply jump force 
+                    anim.SetInteger("Animation State", 3); // play jump animation
 
+                }
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.5f, mylayerMask);
+                if (hit.collider != null)
+                {
+                    PlayerRigidBody.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpSpeed);
                 }
 
             }
         }
 
+       
+
+
+
         //resting animation if no keys are pressed.
-        if (Input.anyKey == false)
+            if (Input.anyKey == false)
         {
             anim.SetInteger("Animation State", 2);
         }
