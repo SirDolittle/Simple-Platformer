@@ -1,27 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI; 
+using UnityEngine.UI;
 
-public class NameCollection : MonoBehaviour
+namespace Noah.Scoreboards
 {
-    public Scoreboard scoreboard;
-    private bool hasubmitted;
-    private bool hasEnteredSomething;
-    // Start is called before the first frame update
-
-
-   public void InputCheck()
+    public class NameCollection : MonoBehaviour
     {
-        hasEnteredSomething = true; 
-    }
+        private bool hasubmitted;
+        private bool hasEnteredSomething;
+        public DataCollection dataCollection;
 
-   public void AddToPlayerList()
-    {
-        if (hasubmitted == false && hasEnteredSomething == true )
+
+        // Start is called before the first frame update
+
+
+        public void InputCheck()
         {
-            hasubmitted = true; 
-            scoreboard.currentName = (gameObject.GetComponent<InputField>().text);
+            hasEnteredSomething = true;
         }
-   }
+
+        public void AddToPlayerList(Text inputFieldText)
+        {
+            if (hasubmitted == false && hasEnteredSomething == true)
+            {
+                hasubmitted = true;
+                ScoreboardEntryData newEntry = new ScoreboardEntryData();
+                newEntry.entryName = inputFieldText.text;
+                newEntry.entryTime = dataCollection.TotalTimeInGame;
+                dataCollection.newEntry = newEntry; 
+
+            }
+        }
+    }
 }

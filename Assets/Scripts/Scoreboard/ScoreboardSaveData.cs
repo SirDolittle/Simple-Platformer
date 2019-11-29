@@ -1,18 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System; 
 using UnityEngine;
 
-public class ScoreboardSaveData : MonoBehaviour
+namespace Noah.Scoreboards
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [Serializable]
 
-    // Update is called once per frame
-    void Update()
+    public class ScoreboardSaveData
     {
-        
+        public List<ScoreboardEntryData> highscores = new List<ScoreboardEntryData>();
     }
 }

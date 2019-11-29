@@ -9,7 +9,6 @@ public class HighScoreBoard : MonoBehaviour
     private Transform entryTemplate;
     private List<HighscoreEntry> highscoreEntryList;
     private List<Transform> highscoreEntryTransformList;
-    public Scoreboard scoreboard; 
 
     private void Awake()
     {
@@ -76,13 +75,6 @@ public class HighScoreBoard : MonoBehaviour
         transformList.Add(entryTransform); 
     }
 
-    private void CreateNewScore(int score, string name)
-    {
-        HighscoreEntry highscoreEntry = new HighscoreEntry { score = scoreboard.currentLevelOneTime, name = scoreboard.currentName};
-
-        highscoreEntryList.Add(highscoreEntry);
-
-    }
 
     public class HighscoreEntry
     {

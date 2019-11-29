@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Levels/Level 3.unity
     guid: 7c43a1f45eeda2449b312942f0cfd9c4
+  - enabled: 1
+    path: Assets/Levels/Name Entry.unity
+    guid: fff96d9514260684083f89439c76010c
+  - enabled: 1
+    path: Assets/Levels/Scoreboard.unity
+    guid: 5cb46a2e9dfa5b04b833fdc062a68b45
   m_configObjects: {}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Analytics;
 using UnityEngine.SceneManagement;
+using Noah.Scoreboards;
 public class PlayerStats : MonoBehaviour
 {
     public int packNumber;
@@ -14,16 +15,14 @@ public class PlayerStats : MonoBehaviour
     private string currentLevel;
     private LevelManager levelManager;
     PickUpHealth pickUpHealth;
-    public DataCollection dataCollection;
-    public Scoreboard scoreboard; 
+    public DataCollection dataCollection; 
 
     // Start is called before the first frame update
     void Awake()
     {
         currentLevel = SceneManager.GetActiveScene().name;
         levelManager = FindObjectOfType<LevelManager>();
-       
-
+ 
     }
 
   
@@ -47,23 +46,13 @@ public class PlayerStats : MonoBehaviour
     {
         totalTimeInlevel += Time.timeSinceLevelLoad;
 
-        if(currentLevel == "Level 1")
+        dataCollection.lastLevelTime += Time.timeSinceLevelLoad;
+
+        if(currentLevel == "Level 3")
         {
-
-            scoreboard.currentLevelOneTime = dataCollection.LevelCompletionTime;
-
-        } else if (currentLevel == "Level 2")
-        {
-            scoreboard.currentLevelTwoTime = dataCollection.LevelCompletionTime;
-
+            dataCollection.TotalTimeInGame = totalTimeInlevel;
         }
-        else if (currentLevel == "Level 3")
-        {
-            scoreboard.I_TotalCompletion.Add(totalTimeInlevel);
-            scoreboard.currentLevelThreeTime = dataCollection.LevelCompletionTime;
-        }
-
-
+        
         AnalyticsEvent.Custom((currentLevel) + "_Complete", new Dictionary<string, object>
           {
             {"Total Death_Count", dataCollection.LevelDeathCount },
@@ -106,26 +95,8 @@ public class PlayerStats : MonoBehaviour
         dataCollection.LevelCompletionTime = 0;
         dataCollection.LevelDeathCount = 0;
         dataCollection.HealthPacksPickedUp = 0;
-
-        if (currentLevel == "Level 1")
-        {
-            scoreboard.I_LevelOneCompletion.Add(0);
-            scoreboard.I_LevelTwoCompletion.Add(0);
-            scoreboard.I_LevelThreeCompletion.Add(0);
-            scoreboard.I_TotalCompletion.Add(0);
-        }
-        else if (currentLevel == "Level 2")
-        {
-            scoreboard.I_LevelTwoCompletion.Add(0);
-            scoreboard.I_LevelThreeCompletion.Add(0);
-            scoreboard.I_TotalCompletion.Add(0);
-        }
-        else if (currentLevel == "Level 3")
-        {
-            scoreboard.I_LevelThreeCompletion.Add(0);
-            scoreboard.I_TotalCompletion.Add(0);
-        }
-
+        dataCollection.TotalTimeInGame = 0;
+        dataCollection.lastLevelTime = 0; 
     }
 
 }

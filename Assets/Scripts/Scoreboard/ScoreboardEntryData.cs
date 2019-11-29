@@ -1,10 +1,12 @@
 ﻿using System.Collections.Generic;
+using System; 
 
 namespace Noah.Scoreboards
 {
     [Serializable]
-    public class ScoreboardEntryData
+    public struct ScoreboardEntryData
     {
-        public List<ScoreboardEntryData> hihscores = new List<ScoreboardEntryData>();
+        public string entryName;
+        public float entryTime;
     }
 }
