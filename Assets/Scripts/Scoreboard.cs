@@ -6,19 +6,18 @@ using UnityEngine;
 public class Scoreboard : ScriptableObject
 {
 
-    public float[] TimeScores;
-    public string[] Names; 
+    //player names
+    public List<string> PlayerNames = new List<string>();
+    //Individual times
+    public List<float> I_TotalCompletion = new List<float>();
+    public List<float> I_LevelOneCompletion = new List<float>();
+    public List<float> I_LevelTwoCompletion = new List<float>();
+    public List<float> I_LevelThreeCompletion = new List<float>();
 
+    public string currentName;
+    public float currentLevelOneTime;
+    public float currentLevelTwoTime;
+    public float currentLevelThreeTime;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
+

@@ -3946,6 +3946,7 @@ MonoBehaviour:
   checkPointHits: 0
   levelComplete: 0
   dataCollection: {fileID: 11400000, guid: ea82587ff7377e94f807653d2488cb4d, type: 2}
+  scoreboard: {fileID: 11400000, guid: 22e7f2c423cff944e8c5ecd7d58a5edb, type: 2}
 --- !u!1 &603880078
 GameObject:
   m_ObjectHideFlags: 0
@@ -15679,6 +15680,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5864636835225412972, guid: eb1b0f6569716604fb23225ca98ca21e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 9075062555227536319, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
       propertyPath: DeathScreen
@@ -15770,11 +15776,6 @@ PrefabInstance:
       value: 4096
       objectReference: {fileID: 0}
     - target: {fileID: 261641186957880794, guid: eb1b0f6569716604fb23225ca98ca21e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864636835225412972, guid: eb1b0f6569716604fb23225ca98ca21e,
         type: 3}
       propertyPath: m_Layer
       value: 10
