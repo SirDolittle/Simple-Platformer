@@ -27,7 +27,7 @@ namespace Noah.Scoreboards
                 hasubmitted = true;
                 ScoreboardEntryData newEntry = new ScoreboardEntryData();
                 newEntry.entryName = inputFieldText.text;
-                newEntry.entryTime = dataCollection.TotalTimeInGame;
+                newEntry.entryTime = dataCollection.lastLevelTime;
                 dataCollection.newEntry = newEntry; 
 
             }
